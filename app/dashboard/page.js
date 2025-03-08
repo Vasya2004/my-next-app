@@ -13,3 +13,5 @@ export default function Dashboard() {
         </div>
     );
 }
+
+// Next.js will automatically inline the CSS into your components.

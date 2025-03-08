@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мебельная компания "УютДом"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>УютДом</h1>
+        <p>Качественная мебель для вашего комфорта</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>О нашей компании</h2>
+        <p>Мы создаем уютную и стильную мебель для вашего дома уже более 15 лет. Наша миссия - сделать ваш дом комфортным и красивым.</p>
+    </section>
+
+    <section id="catalog" class="products">
+        <h2>Наш каталог</h2>
+        <div class="product">
+            <h3>Диваны</h3>
+            <p>Комфортные диваны различных стилей и размеров для вашей гостиной.</p>
+        </div>
+        <div class="product">
+            <h3>Кухонные гарнитуры</h3>
+            <p>Функциональные и стильные кухонные гарнитуры под любой интерьер.</p>
+        </div>
+        <div class="product">
+            <h3>Спальные гарнитуры</h3>
+            <p>Уютные спальные гарнитуры для полноценного отдыха и релаксации.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Наши услуги</h2>
+        <div class="service">
+            <h3>Индивидуальный дизайн</h3>
+            <p>Разработаем уникальный дизайн мебели по вашим пожеланиям.</p>
+        </div>
+        <div class="service">
+            <h3>Доставка и сборка</h3>
+            <p>Бесплатная доставка и профессиональная сборка мебели.</p>
+        </div>
+        <div class="service">
+            <h3>Гарантийное обслуживание</h3>
+            <p>Предоставляем гарантию на всю нашу продукцию и сервисное обслуживание.</p>
+        </div>
+    </section>
+
+    <button id="openModal">Заказать консультацию</button>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h2>Заказать консультацию</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="tel" id="phone" placeholder="Ваш телефон" required>
+                <textarea id="message" placeholder="Ваш вопрос" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="contacts">
+        <h2>Контакты</h2>
+        <p>Адрес: г. Москва, ул. Мебельная, д. 1</p>
+        <p>Телефон: +7 (999) 123-45-67</p>
+        <p>Email: info@uyutdom.ru</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
